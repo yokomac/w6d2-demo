@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Team Calculator</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 3rem; color: #1e293b; }
+    main { max-width: 420px; }
+    input, select, button { font: inherit; margin: .25rem; padding: .4rem; }
+    input { width: 75px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Team Calculator</h1>
+    <p>Our two-person GitHub teamwork project.</p>
+    <label>First number <input id="numberA" type="number" value="2"></label>
+    <select id="operation" aria-label="Operation">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">×</option>
+      <option value="/">÷</option>
+    </select>
+    <label>Second number <input id="numberB" type="number" value="3"></label>
+    <button id="calculate" type="button">Calculate</button>
+    <p id="result" role="status">Result: not calculated yet</p>
+  </main>
+  <script src="./calculator.js"></script>
+</body>
+</html>
